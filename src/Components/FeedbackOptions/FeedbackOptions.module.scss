@@ -1,0 +1,30 @@
+.button {
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: mediumaquamarine;
+  color: white;
+
+  & + .button {
+    margin-top: 10px;
+  }
+}
+
+.good {
+  background-color: forestgreen;
+  @extend .button;
+}
+
+.neutral {
+  background-color: teal;
+  @extend .button;
+}
+
+.bad {
+  background-color: crimson;
+  @extend .button;
+}

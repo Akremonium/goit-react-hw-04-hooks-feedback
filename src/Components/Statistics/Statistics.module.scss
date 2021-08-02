@@ -1,0 +1,31 @@
+.statistics {
+  font-size: 18px;
+
+  & p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    border-bottom: 1px dotted black;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  & span {
+    display: block;
+    font-weight: 700;
+  }
+}
+
+.good {
+  color: forestgreen;
+}
+
+.neutral {
+  color: teal;
+}
+
+.bad {
+  color: crimson;
+}
