@@ -35,7 +35,7 @@ const App = () => {
   }, [good, neutral, bad]);
 
   const countPositiveFeedbackPercentage = () => {
-    return ((good / (good + neutral + bad)) * 100).toFixed(2);
+    return ((good / total) * 100).toFixed(2);
   };
 
   return (
